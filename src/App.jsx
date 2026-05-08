@@ -3,6 +3,7 @@ import Layout1 from './layouts/Layout1';
 import Layout2 from './layouts/Layout2';
 import Layout3 from './layouts/Layout3';
 import Layout4 from './layouts/Layout4';
+import Layout5 from './layouts/Layout5';
 import './index.css';
 
 /**
@@ -24,6 +25,9 @@ function App() {
 
       {/* Layout 4: Healthy Eyes Section */}
       <Layout4 />
+
+      {/* Layout 5: Dark Theme Services Section */}
+      <Layout5 />
     </div>
   );
 }
