@@ -23,14 +23,14 @@ const Layout1 = () => {
             <div className="relative z-10 flex flex-col justify-center lg:col-span-7 lg:pr-16">
 
               {/* Subtle Label */}
-              <span className="mb-6 inline-block text-xs font-bold uppercase tracking-[0.2em] text-teal-600">
+              <span className="mb-6 inline-block text-xs font-bold uppercase tracking-[0.2em] text-red-600">
                 Personalized Healthcare
               </span>
 
               {/* Headline */}
               <h1 className="mb-6 text-5xl font-bold leading-[1.1] tracking-tight text-slate-900 md:text-6xl lg:text-7xl">
                 Advanced medicine, <br />
-                <span className="text-slate-500">compassionate care.</span>
+                <span className="text-slate-900">compassionate care.</span>
               </h1>
 
               {/* Supporting Paragraph */}
@@ -40,7 +40,7 @@ const Layout1 = () => {
 
               {/* CTAs */}
               <div className="mb-16 flex flex-wrap items-center gap-4">
-                <button className="inline-flex h-14 items-center justify-center rounded-2xl bg-slate-900 px-8 text-base font-semibold text-white shadow-lg shadow-slate-900/10 transition-transform hover:-translate-y-0.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2">
+                <button className="inline-flex h-14 items-center justify-center rounded-2xl bg-red-600 px-8 text-base font-semibold text-white shadow-lg shadow-red-600/10 transition-transform hover:-translate-y-0.5 hover:bg-red-700 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2">
                   Book Appointment
                 </button>
                 <button className="group inline-flex h-14 items-center justify-center rounded-2xl border border-transparent bg-white px-8 text-base font-medium text-slate-600 shadow-sm ring-1 ring-slate-200 transition-colors hover:border-slate-300 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2">

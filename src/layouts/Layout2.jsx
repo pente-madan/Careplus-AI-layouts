@@ -17,9 +17,9 @@ const Layout2 = () => {
           <div className="relative flex flex-col justify-between lg:col-span-6">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-slate-100 shadow-2xl shadow-slate-200/50">
               <img
-                src="https://images.unsplash.com/photo-1764727291644-5dcb0b1a0375?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBtZWRpY2FsJTIwY2xpbmljJTIwcmVjZXB0aW9uJTIwYWVzdGhldGljJTIwYnJpZ2h0fGVufDF8fHx8MTc3MDA0MjkwNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Modern, welcoming medical reception area"
-                className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&auto=format&fit=crop&w=1080&q=80"
+                alt="Healthcare professional consulting with patient"
+                className="h-full w-full object-cover"
               />
             </div>
           </div>
@@ -28,13 +28,13 @@ const Layout2 = () => {
           <div className="flex flex-col justify-center lg:col-span-6">
             <div className="mb-10">
               <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-slate-600">
-                <span className="h-1.5 w-1.5 rounded-full bg-teal-500" />
+                <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
                 Contact Us
               </span>
               <h2 className="mb-4 font-heading text-4xl font-bold leading-tight text-slate-900">
-                Let's start the <br />conversation.
+                Let's start the conversation.
               </h2>
-              <p className="text-lg text-slate-500">
+              <p className="text-lg text-slate-600">
                 Schedule a consultation or ask us anything. Our team typically responds within 2 hours.
               </p>
             </div>
@@ -86,7 +86,7 @@ const Layout2 = () => {
 
               <button
                 type="submit"
-                className="group mt-2 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2"
+                className="group mt-2 inline-flex w-full items-center justify-center rounded-xl bg-red-600 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2"
               >
                 Send Message
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
