@@ -4,6 +4,7 @@ import Layout2 from './layouts/Layout2';
 import Layout3 from './layouts/Layout3';
 import Layout4 from './layouts/Layout4';
 import Layout5 from './layouts/Layout5';
+import Layout6 from './layouts/Layout6';
 import './index.css';
 
 /**
@@ -28,6 +29,9 @@ function App() {
 
       {/* Layout 5: Dark Theme Services Section */}
       <Layout5 />
+
+      {/* Layout 6: Immersive Gallery Section */}
+      <Layout6 />
     </div>
   );
 }

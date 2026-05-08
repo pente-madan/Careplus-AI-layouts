@@ -66,7 +66,7 @@ const Layout1 = () => {
                   <img
                     src="https://images.unsplash.com/photo-1758691462743-f9fc9e430d39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3NwaXRhbCUyMGRvY3RvciUyMHBhdGllbnQlMjBpbnRlcmFjdGlvbnxlbnwxfHx8fDE3NzAwMzkyMTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                     alt="Doctor discussing treatment with patient"
-                    className="img-reveal h-full w-full object-cover object-center opacity-90"
+                    className="h-full w-full object-cover object-center opacity-90"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent" />
                 </div>
