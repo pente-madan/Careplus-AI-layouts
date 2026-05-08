@@ -1,0 +1,178 @@
+/* ==============================================
+   hover-effects.css
+   AI Suggestion Interface
+   Source: CarePlus Website 2.0
+   ============================================== */
+
+
+/* -----------------------------------------------
+   1. CARD LIFT
+   Usage: class="card-lift"
+   Direct hover on the card wrapper
+----------------------------------------------- */
+.card-lift {
+  transition: transform var(--transition-slow),
+              box-shadow var(--transition-slow),
+              border-color var(--transition-base);
+}
+.card-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-2xl);
+  border-color: var(--border-hover);
+}
+
+
+/* -----------------------------------------------
+   2. IMAGE REVEAL — grayscale to color + scale
+   Usage: class="img-reveal" on <img>
+   Requires parent class="group"
+----------------------------------------------- */
+.img-reveal {
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: filter var(--transition-image),
+              transform var(--transition-image);
+}
+.group:hover .img-reveal {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+
+/* -----------------------------------------------
+   3. ICON FLIP — bg turns primary red
+   Usage: class="icon-flip" on icon wrapper div
+   Requires parent class="group"
+----------------------------------------------- */
+.icon-flip {
+  background-color: rgba(255, 255, 255, 0.90);
+  color: var(--primary);
+  transition: background-color var(--transition-base),
+              color var(--transition-base);
+}
+.group:hover .icon-flip {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+
+/* -----------------------------------------------
+   4. ICON SCALE — wrapper grows on hover
+   Usage: class="icon-scale" on icon wrapper div
+   Requires parent class="group"
+----------------------------------------------- */
+.icon-scale {
+  transition: transform var(--transition-base);
+}
+.group:hover .icon-scale {
+  transform: scale(1.1);
+}
+
+
+/* -----------------------------------------------
+   5. ARROW SLIDE — arrow nudges right
+   Usage: class="arrow-slide" on arrow icon wrapper
+   Requires parent class="group"
+----------------------------------------------- */
+.arrow-slide {
+  transition: transform var(--transition-base);
+}
+.group:hover .arrow-slide {
+  transform: translateX(4px);
+}
+
+
+/* -----------------------------------------------
+   6. ROW ITEM — list row fills on hover
+   Usage: class="row-item"
+   Direct hover
+----------------------------------------------- */
+.row-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  transition: background-color var(--transition-base),
+              border-color var(--transition-base);
+}
+.row-item:hover {
+  background-color: var(--primary-ghost);
+  border-color: var(--border-hover);
+}
+
+
+/* -----------------------------------------------
+   7. TEXT COLOUR SHIFT — heading turns red
+   Usage: class="text-hover-primary" on h3/h4
+   Requires parent class="group"
+----------------------------------------------- */
+.text-hover-primary {
+  color: var(--foreground);
+  transition: color var(--transition-base);
+}
+.group:hover .text-hover-primary {
+  color: var(--primary);
+}
+
+
+/* -----------------------------------------------
+   8. GLOW BG — ambient red glow behind card
+   Usage: class="glow-bg" as absolute div inside .group
+   Requires parent class="group" + position: relative
+----------------------------------------------- */
+.glow-bg {
+  position: absolute;
+  inset: 0;
+  background-color: var(--primary);
+  border-radius: var(--radius-xl);
+  opacity: 0;
+  filter: blur(40px);
+  z-index: -1;
+  transition: opacity var(--transition-slow);
+}
+.group:hover .glow-bg {
+  opacity: 0.05;
+}
+
+
+/* -----------------------------------------------
+   9. NAV LINK — underline grows from left
+   Usage: class="nav-link" on <a> in navigation
+   Direct hover
+----------------------------------------------- */
+.nav-link {
+  position: relative;
+  color: var(--text-body);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: width var(--transition-base);
+}
+.nav-link:hover {
+  color: var(--primary);
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+/* -----------------------------------------------
+   10. GAP EXPAND — flex gap widens on hover
+   Usage: class="gap-expand" on inline-flex link rows
+   Direct hover
+----------------------------------------------- */
+.gap-expand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap var(--transition-base);
+}
+.gap-expand:hover {
+  gap: 12px;
+}

@@ -1,0 +1,26 @@
+/* Import Fonts */
+@import './styles/fonts.css';
+
+/* Import Theme Tokens */
+@import './styles/theme.css';
+
+/* Import Hover Effects */
+@import './styles/hover-effects.css';
+
+/* Tailwind Base Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset & Smoothing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
