@@ -86,7 +86,7 @@ const Layout6 = () => {
               Experience Excellence
             </span>
             <h2 className="mb-6 font-heading text-4xl font-bold text-slate-900 md:text-5xl lg:text-6xl" data-aos="fade-up" data-aos-delay="200">
-              Where Care Meets <span className="text-red-600">Innovation</span>
+              Where Care Meets <span className="text-black">Innovation</span>
             </h2>
             <p className="max-w-2xl text-lg text-slate-600" data-aos="fade-up" data-aos-delay="300">
               Explore our state-of-the-art facilities and meet the dedicated professionals committed to your well-being.
