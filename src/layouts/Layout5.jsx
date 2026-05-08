@@ -53,12 +53,12 @@ const Layout5 = () => {
         <div className="absolute -mb-20 -ml-20 bottom-0 left-0 h-[500px] w-[500px] rounded-full bg-slate-200/40 blur-3xl" />
 
         <div className="relative z-10 container mx-auto px-4 md:px-6">
-          <div className="mb-20 flex flex-col items-center justify-center gap-8">
+          <div className="mb-20 flex flex-col items-center justify-center gap-8" data-aos="fade-up">
             <div className="max-w-2xl text-center">
-              <span className="mb-4 inline-block text-sm font-bold uppercase tracking-widest text-red-600">
+              <span className="mb-4 inline-block text-sm font-bold uppercase tracking-widest text-red-600" data-aos="fade-up" data-aos-delay="100">
                 Why Families Choose Us
               </span>
-              <h2 className="font-heading text-4xl font-bold text-slate-900 md:text-5xl">
+              <h2 className="font-heading text-4xl font-bold text-slate-900 md:text-5xl" data-aos="fade-up" data-aos-delay="200">
                 Excellence in every <span className="text-slate-900">detail.</span>
               </h2>
             </div>
@@ -66,7 +66,7 @@ const Layout5 = () => {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
              {services.slice(0, 3).map((service, index) => (
-                <div key={`feature-${index}`} className="group card-lift relative overflow-hidden rounded-3xl bg-white p-8 ring-1 ring-slate-200">
+                <div key={`feature-${index}`} className="group card-lift relative overflow-hidden rounded-3xl bg-white p-8 ring-1 ring-slate-200" data-aos="fade-up" data-aos-delay={300 + index * 150}>
                    <div className="mb-6 flex items-center justify-between">
                       <div className="icon-scale flex h-12 w-12 items-center justify-center rounded-xl bg-red-600 text-white ring-1 ring-red-300">
                          <div className="scale-90">
@@ -84,7 +84,7 @@ const Layout5 = () => {
              {services.slice(3, 6).map((service, index) => {
                 const actualIndex = index + 3;
                 return (
-                <div key={`feature-${actualIndex}`} className="group card-lift relative overflow-hidden rounded-3xl bg-white p-8 ring-1 ring-slate-200">
+                <div key={`feature-${actualIndex}`} className="group card-lift relative overflow-hidden rounded-3xl bg-white p-8 ring-1 ring-slate-200" data-aos="fade-up" data-aos-delay={600 + index * 150}>
                    <div className="mb-6 flex items-center justify-between">
                       <div className="icon-scale flex h-12 w-12 items-center justify-center rounded-xl bg-red-600 text-white ring-1 ring-red-300">
                          <div className="scale-90">

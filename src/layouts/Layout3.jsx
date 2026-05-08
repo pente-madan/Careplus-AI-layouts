@@ -38,17 +38,17 @@ const Layout3 = () => {
 
              <div className="container relative z-10 mx-auto px-4 lg:max-w-md lg:pr-12 lg:text-right">
                 <div className="flex flex-col items-start lg:items-end">
-                  <span className="mb-4 inline-flex items-center rounded-full border border-slate-700 bg-slate-800/50 px-3 py-1 text-xs font-medium text-red-400 backdrop-blur-sm">
+                  <span className="mb-4 inline-flex items-center rounded-full border border-slate-700 bg-slate-800/50 px-3 py-1 text-xs font-medium text-red-400 backdrop-blur-sm" data-aos="fade-up" data-aos-delay="100">
                     <Star className="mr-1.5 h-3 w-3" />
                     Patient First
                   </span>
-                  <h2 className="mb-4 text-4xl font-bold tracking-tight text-white lg:text-5xl">
+                  <h2 className="mb-4 text-4xl font-bold tracking-tight text-white lg:text-5xl" data-aos="fade-up" data-aos-delay="200">
                     Compassionate <br /> Care
                   </h2>
-                  <p className="mb-8 max-w-sm text-lg text-slate-300 lg:text-right">
+                  <p className="mb-8 max-w-sm text-lg text-slate-300 lg:text-right" data-aos="fade-up" data-aos-delay="300">
                     We listen, we care, and we walk with you. Experience a level of empathy that makes healing feel natural.
                   </p>
-                  <button className="inline-flex h-12 items-center justify-center rounded-xl bg-red-600 px-6 text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900">
+                  <button className="inline-flex h-12 items-center justify-center rounded-xl bg-red-600 px-6 text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900" data-aos="zoom-in" data-aos-delay="400">
                     Book Appointment
                   </button>
                 </div>
@@ -56,7 +56,7 @@ const Layout3 = () => {
           </div>
 
           {/* Right Panel: Medical Excellence */}
-          <div className="relative flex w-full flex-col justify-center bg-slate-50 py-20 lg:w-1/2 lg:py-0">
+          <div className="relative flex w-full flex-col justify-center bg-slate-50 py-20 lg:w-1/2 lg:py-0" data-aos="fade-left" data-aos-delay="200">
              {/* Background Geometric Pattern */}
              <div className="absolute inset-0 z-0 opacity-[0.4]"
                 style={{
@@ -67,19 +67,19 @@ const Layout3 = () => {
 
              <div className="container relative z-10 mx-auto px-4 lg:max-w-md lg:pl-12">
                <div className="flex flex-col items-start">
-                  <span className="mb-4 inline-flex items-center rounded-full bg-slate-200 px-3 py-1 text-xs font-medium text-slate-600">
+                  <span className="mb-4 inline-flex items-center rounded-full bg-slate-200 px-3 py-1 text-xs font-medium text-slate-600" data-aos="fade-up" data-aos-delay="300">
                     <Microscope className="mr-1.5 h-3 w-3" />
                     World-Class Tech
                   </span>
-                  <h2 className="mb-4 text-4xl font-bold tracking-tight text-slate-900 lg:text-5xl">
+                  <h2 className="mb-4 text-4xl font-bold tracking-tight text-slate-900 lg:text-5xl" data-aos="fade-up" data-aos-delay="400">
                     Advanced <br /> Expertise
                   </h2>
-                  <p className="mb-8 max-w-sm text-lg text-slate-500">
+                  <p className="mb-8 max-w-sm text-lg text-slate-500" data-aos="fade-up" data-aos-delay="500">
                     Leveraging breakthrough technology and specialist knowledge to deliver precise, effective treatments.
                   </p>
-                  <button className="group inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-medium text-slate-700 shadow-sm transition-colors hover:border-slate-300 hover:text-slate-900">
+                  <button className="group inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-medium text-slate-700 shadow-sm transition-colors hover:border-slate-300 hover:text-slate-900" data-aos="zoom-in" data-aos-delay="600">
                     Explore Services
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="arrow-slide ml-2 h-4 w-4" />
                   </button>
                </div>
              </div>

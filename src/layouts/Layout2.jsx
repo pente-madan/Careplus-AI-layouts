@@ -14,7 +14,7 @@ const Layout2 = () => {
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
 
           {/* Left Column: Visual (50%) */}
-          <div className="relative flex flex-col justify-between lg:col-span-6">
+          <div className="relative flex flex-col justify-between lg:col-span-6" data-aos="fade-right">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-slate-100 shadow-2xl shadow-slate-200/50">
               <img
                 src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&auto=format&fit=crop&w=1080&q=80"
@@ -25,21 +25,21 @@ const Layout2 = () => {
           </div>
 
           {/* Right Column: Contact Form (50%) */}
-          <div className="flex flex-col justify-center lg:col-span-6">
+          <div className="flex flex-col justify-center lg:col-span-6" data-aos="fade-left" data-aos-delay="200">
             <div className="mb-10">
-              <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-slate-600">
+              <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-slate-600" data-aos="fade-up" data-aos-delay="300">
                 <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
                 Contact Us
               </span>
-              <h2 className="mb-4 font-heading text-4xl font-bold leading-tight text-slate-900">
+              <h2 className="mb-4 font-heading text-4xl font-bold leading-tight text-slate-900" data-aos="fade-up" data-aos-delay="400">
                 Let's start the conversation.
               </h2>
-              <p className="text-lg text-slate-600">
+              <p className="text-lg text-slate-600" data-aos="fade-up" data-aos-delay="500">
                 Schedule a consultation or ask us anything. Our team typically responds within 2 hours.
               </p>
             </div>
 
-            <form className="space-y-6">
+            <form className="space-y-6" data-aos="fade-up" data-aos-delay="600">
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="space-y-2">
                   <label htmlFor="first-name" className="text-sm font-medium text-slate-900">First Name</label>
@@ -87,9 +87,10 @@ const Layout2 = () => {
               <button
                 type="submit"
                 className="group mt-2 inline-flex w-full items-center justify-center rounded-xl bg-red-600 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2"
+                data-aos="zoom-in" data-aos-delay="700"
               >
                 Send Message
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="arrow-slide ml-2 h-4 w-4" />
               </button>
             </form>
           </div>
